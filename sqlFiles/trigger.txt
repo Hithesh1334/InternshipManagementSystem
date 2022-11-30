@@ -1,0 +1,14 @@
+DELIMITER $$
+create or replace trigger Update_grade
+before Update 
+on result
+for each row 
+BEGIN
+	 If (new.marks>40) then
+	 set new.Grade = 'S';
+	 else 
+	 set new.Grade ='A';
+	 end if;
+END $$
+DELIMITER ;
+

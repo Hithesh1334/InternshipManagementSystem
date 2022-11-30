@@ -1,0 +1,17 @@
+DELIMITER $$  
+CREATE OR REPLACE FUNCTION cal_age(c Date)  
+RETURNS INT
+DETERMINISTIC
+BEGIN
+	 DECLARE age int;
+    update student_intern set age = TIMESTAMPDIFF(Year,dob ,curdate()) where srn=srn ; 
+	 return age;
+END $$
+DELIMITER ;
+
+SET @count=0;
+set @dob = (select dob from student_intern where srn='PES1UG20CS100');
+CALL get_age(@dob, @age);
+SELECT @r_count;
+
+

@@ -1,0 +1,4 @@
+CREATE VIEW studentmarks AS
+SELECT s.srn, s.s_Fname, s.s_Lname, sr.marks, sr.Grade
+FROM student_intern s, result sr
+WHERE s.srn = sr.srn; 	
