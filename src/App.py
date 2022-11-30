@@ -25,7 +25,7 @@ def set_background(png_file):
 
 # set_background('E:\\CSE\\cs5sem\\DBMS\\Intership managment system\\python\\testimg1.jpg')
 # set_background('E:\\CSE\\cs5sem\\DBMS\\Intership managment system\\19873.jpg')
-set_background('C:\\Users\\Hithesh Patel\\Downloads\\42494.jpg')
+set_background('src/42494.jpg')
 # set_background('C:\\Users\\\Hithesh Patel\\Downloads\\1902.i039.011.P.m004.c30.cloud services isometric icons-08.jpg')
 def main():
     with st.sidebar:
