@@ -15,7 +15,7 @@ Tech used are
 1. Install all the requirements which are there in - [requirements.txt](./requirements.txt)
 2. Then run xampp on your system.</br>
 <img src="https://drive.google.com/uc?export=view&id=1Zbs6HHD1VHWGBWtZcRlPFmsF4IR8Uvym" height=300 width=450 ></br>
-  
+3. On xampp interface click on 'Admin', you will be redirected to phpmyadmin page where you create a database then import the file present in ./sqlFiles/inshipdatabase.sql
 3. Then type 
 ```bash
 cd src
